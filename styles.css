@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-content: center;
+  height: 80px;
+  border: 1px transparent black;
+  box-shadow: 0 4px 5px -2px  blue;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+nav a {
+  color: darkgray;
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px;
+  display: block;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+nav li {
+  float: right;
+}
