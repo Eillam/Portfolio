@@ -1,5 +1,8 @@
-body {
+body, html {
   margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  height: 100%;
 }
 
 header {
@@ -14,22 +17,26 @@ header {
 
 h1 {
   color: darkgreen;
+  margin: 20px;
 }
 
 nav ul {
+  display: flex;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  position: right;
 }
 
 nav a {
   color: darkgray;
   text-decoration: none;
-  padding: 15px;
+  padding: 15px 5px;
   margin: 15px;
-  display: block;
+  display: flex;
   text-align: center;
+  justify-content: right;
 }
 
 nav a:hover {
@@ -38,4 +45,54 @@ nav a:hover {
 
 nav li {
   float: right;
+}
+
+section {
+  scroll-snap-align: start;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.pageOne {
+  display: flex;
+  box-sizing: border-box;
+  background-color: green;
+  width: 60%;
+  height: 60%;
+}
+
+.pageTwo {
+  display: flex;
+  box-sizing: border-box;
+  background-color: blue;
+  width: 60%;
+  height: 60%;
+}
+
+.pageThree {
+  display: flex;
+  box-sizing: border-box;
+  background-color: violet;
+  width: 60%;
+  height: 60%;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: burlywood;
 }
