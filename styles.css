@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -12,7 +13,10 @@ header {
   align-content: center;
   height: 80px;
   border: 1px transparent black;
-  box-shadow: 0 4px 5px -2px  blue;
+  box-shadow: 0 4px 5px -2px blue;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
 }
 
 h1 {
@@ -57,13 +61,25 @@ section {
   height: 100vh;
 }
 
-
 .pageOne {
   display: flex;
   box-sizing: border-box;
-  background-color: green;
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .pageOne {
+    flex-direction: column;
+  }
+  
+}
+
+#name {
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .pageTwo {
@@ -77,10 +93,12 @@ section {
 .pageThree {
   display: flex;
   box-sizing: border-box;
-  background-color: violet;
-  width: 60%;
-  height: 60%;
+  width: 350px;
+  height: 250px;
+  align-items: center;
+  flex-direction: column;
 }
+
 
 .container {
   scroll-snap-type: y mandatory;
@@ -88,11 +106,32 @@ section {
   height: 100vh;
 }
 
-footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 80px;
-  background-color: burlywood;
+photo {
+  display: flex;
+}
+
+#logo {
+  flex: 1;
+  width: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#photo {
+width: 350px;
+height: 350px;
+border-radius: 250px 750px 250px 750px /
+750px 250px 750px 250px;
+animation: wobble 10s ease-in-out alternate infinite;
+}
+
+@keyframes wobble {
+  50% {
+    border-radius: 750px 550px 350px 750px /
+                   350px 750px 550px 450px;
+  }
+  100% {
+    border-radius: 750px 250px 750px 250px /
+                   250px 750px 250px 750px;
+  }
 }
