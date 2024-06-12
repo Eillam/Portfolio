@@ -44,7 +44,9 @@ nav a {
 }
 
 nav a:hover {
-  background-color: black;
+  background-color: darkgreen;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 20%;
 }
 
 nav li {
@@ -78,16 +80,47 @@ section {
 }
 
 #name {
-  font-style: italic;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 
 .pageTwo {
   display: flex;
   box-sizing: border-box;
-  background-color: blue;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 80%;
+  height: 80%;
+}
+
+.pageTwotwo {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-color: lightblue;
   width: 60%;
   height: 60%;
+}
+
+#fitnessImg, #imga {
+  width: 450px;
+  height: 253px;
+  border-radius: 10%;
+  transition: all 0.3s ease-in-out;
+}
+
+#fitnessImg:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px) {
+  #fitnessImg, #imga {
+    width: 310px;
+    height: 175px;
+  }
 }
 
 .pageThree {
@@ -97,6 +130,8 @@ section {
   height: 250px;
   align-items: center;
   flex-direction: column;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
