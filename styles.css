@@ -45,7 +45,7 @@ nav a {
 
 nav a:hover {
   background-color: darkgreen;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-radius: 20%;
 }
 
@@ -76,11 +76,9 @@ section {
   .pageOne {
     flex-direction: column;
   }
-  
 }
 
 #name {
-  
 }
 
 .pageTwo {
@@ -99,12 +97,13 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  background-color: lightblue;
+
   width: 60%;
   height: 60%;
 }
 
-#fitnessImg, #imga {
+#fitnessImg,
+#imga {
   width: 450px;
   height: 253px;
   border-radius: 10%;
@@ -113,11 +112,12 @@ section {
 
 #fitnessImg:hover {
   transform: scale(1.01);
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 600px) {
-  #fitnessImg, #imga {
+  #fitnessImg,
+  #imga {
     width: 310px;
     height: 175px;
   }
@@ -131,8 +131,10 @@ section {
   align-items: center;
   flex-direction: column;
   font-style: italic;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
+
 
 
 .container {
@@ -153,20 +155,17 @@ photo {
 }
 
 #photo {
-width: 350px;
-height: 350px;
-border-radius: 250px 750px 250px 750px /
-750px 250px 750px 250px;
-animation: wobble 10s ease-in-out alternate infinite;
+  width: 350px;
+  height: 350px;
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  animation: wobble 10s ease-in-out alternate infinite;
 }
 
 @keyframes wobble {
   50% {
-    border-radius: 750px 550px 350px 750px /
-                   350px 750px 550px 450px;
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
   }
   100% {
-    border-radius: 750px 250px 750px 250px /
-                   250px 750px 250px 750px;
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
   }
 }
