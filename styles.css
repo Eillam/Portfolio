@@ -78,9 +78,6 @@ section {
   }
 }
 
-#name {
-}
-
 .pageTwo {
   display: flex;
   box-sizing: border-box;
@@ -100,6 +97,16 @@ section {
 
   width: 60%;
   height: 60%;
+}
+
+.pageTwoThree {
+  max-width: 500px;
+}
+
+#embeddedSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #fitnessImg,
